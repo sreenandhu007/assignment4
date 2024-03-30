@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centennial College Continuing Education Course/Instructor Evaluation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-blue-900 text-white flex justify-between items-center p-4">
+    <div class="flex items-center">
+      <img src="https://crown.edu.mm/wp-content/uploads/2021/06/CENTENNIAL-COLLEGE-jpg.webp" alt="Centennial College Logo" class="w-10 h-10 mr-2">
+      <a href="https://www.centennialcollege.ca" class="font-bold text-xl">Centennial College</a>
+    </div>
+    <div>
+      <a href="mailto:continuing.education@centennialcollege.ca" class="font-bold text-xl">continuing.education@centennialcollege.ca</a>
+    </div>
+  </header>
+  <main class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4">Continuing Education Course/Instructor Evaluation</h1>
+    <p>Please read each statement carefully and choose only one answer for each question.</p>
+    <form action="/action_page.php" class="mt-4">
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="course-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Course Name/Code:</label>
+          <input type="text" id="course-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="e.g. Introduction to Web Development">
+        </div>
+        <div>
+          <label for="semester" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Semester:</label>
+          <select id="semester" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+            <option value="spring/summer">Spring/Summer</option>
+          </select>
+        </div>
+        <div>
+          <label for="year" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Year:</label>
+          <input type="text" id="year" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="e.g. 2023">
+        </div>
+        <div>
+          <label for="instructor" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Instructor:</label>
+          <input type="text" id="instructor" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="e.g. John Smith">
+        </div>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-xl font-bold mb-4">1. How would you rate the instructor's knowledge of the subject?</h2>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-excellent" name="knowledge" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excellent</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-good" name="knowledge" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Good</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-average" name="knowledge" value="average" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-average" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Average</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-poor" name="knowledge" value="poor" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-poor" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Poor</label>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-xl font-bold mb-4">2. How would you rate the instructor's helpfulness of the subject?</h2>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-excellent" name="knowledge2" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excellent</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-good" name="knowledge2" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Good</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-average" name="knowledge2" value="average" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-average" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Average</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-poor" name="knowledge2" value="poor" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-poor" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Poor</label>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-xl font-bold mb-4">3. How would you rate the instructor's courtesy and respect for all  subject?</h2>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-excellent" name="knowledge3" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excellent</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-good" name="knowledge3" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Good</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-average" name="knowledge3" value="average" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-average" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Average</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-poor" name="knowledge3" value="poor" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-poor" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Poor</label>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-xl font-bold mb-4">4. How would you rate the instructor's communication skills?</h2>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-excellent" name="knowledge4" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excellent</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-good" name="knowledge4" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Good</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-average" name="knowledge4" value="average" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-average" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Average</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-poor" name="knowledge4" value="poor" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-poor" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Poor</label>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-xl font-bold mb-4">5. How would you rate the instructor's overall perfomance?</h2>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-excellent" name="knowledge5" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excellent</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-good" name="knowledge5" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Good</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-average" name="knowledge5" value="average" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-average" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Average</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-poor" name="knowledge5" value="poor" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-poor" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Poor</label>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-xl font-bold mb-4">6. How would you rate the course materials?</h2>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-excellent" name="knowledge6" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excellent</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-good" name="knowledge6" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Good</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-average" name="knowledge6" value="average" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-average" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Average</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-poor" name="knowledge6" value="poor" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-poor" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Poor</label>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-xl font-bold mb-4">7. How much did this course meet your expectations?</h2>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-excellent" name="knowledge7" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excellent</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-good" name="knowledge7" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Good</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-average" name="knowledge7" value="average" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-average" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Average</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-poor" name="knowledge7" value="poor" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-poor" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Poor</label>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-xl font-bold mb-4">8. How would you rate this course (overall)?</h2>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-excellent" name="knowledge8" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excellent</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-good" name="knowledge8" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Good</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-average" name="knowledge8" value="average" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-average" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Average</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="knowledge-poor" name="knowledge8" value="poor" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 focus:ring-2 dark:border-gray-600 dark:focus:ring-blue-600 dark:focus:ring-2">
+          <label for="knowledge-poor" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Poor</label>
+        </div>
+      </div>
+      <div class="mt-4">
+       <h2 class="text-xl font-bold mb-4">9.Was the course outline reviewed/explained at the beginning of your course?</h2>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="helpfulness-excellent" name="helpfulness9" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                <label for="helpfulness-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="helpfulness-good" name="helpfulness9" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                <label for="helpfulness-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="helpfulness-fair" name="helpfulness9" value="fair" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                <label for="helpfulness-fair" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Not sure</label>
+              </div>
+            </div>
+    <h2 class="text-xl font-bold mb-4">10. Would you recommend this course to a friend with same interest?</h2>
+                  <div class="flex items-center mb-2">
+                    <input type="radio" id="helpfulness-excellent" name="helpfulness10" value="excellent" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                    <label for="helpfulness-excellent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                  </div>
+                  <div class="flex items-center mb-2">
+                    <input type="radio" id="helpfulness-good" name="helpfulness10" value="good" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                    <label for="helpfulness-good" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                  </div>
+                  <div class="flex items-center mb-2">
+                    <input type="radio" id="helpfulness-fair" name="helpfulness10" value="fair" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                    <label for="helpfulness-fair" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Not sure</label>
+                  </div>
+                </div>
+    <h2 class="text-xl font-bold mb-4">11. What is the best thing about this course?</h2>
+    <textarea id="best-thing" name="best-thing" rows="4" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Enter your answer here..."></textarea>
+    <h2 class="text-xl font-bold mb-4">12. How could we improve this course?</h2>
+    <textarea id="best-thing" name="best-thing" rows="4" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Enter your answer here..."></textarea>
+    <h2 class="text-xl font-bold mb-4">13. Other: </h2>
+    <textarea id="best-thing" name="best-thing" rows="4" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Enter your answer here..."></textarea>
+      <div class="mt-4">
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg">Submit</button>
+      </div>
+    </form>
+  </main>
+  &nbsp;&nbsp; <a href=file:///C:/Users/sreen/OneDrive/Desktop/sreenandhu/index.html> See Homepage</a>
+  <footer class="bg-blue-900 text-white p-4 text-center mt-8">
+    <p>&copy; 2024 Centennial College. All rights reserved.</p>
+    <p>Website: <a href="https://www.centennialcollege.ca" class="underline">www.centennialcollege.ca</a> | Email: <a href="mailto:continuing.education@centennialcollege.ca" class="underline">continuing.education@centennialcollege.ca</a></p>
+  </footer>
+</body>
+</html>
